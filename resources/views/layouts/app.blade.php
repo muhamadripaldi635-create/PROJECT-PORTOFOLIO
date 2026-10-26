@@ -43,21 +43,6 @@
                 <button class="nav-search-btn" id="searchToggleBtn" aria-label="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                @auth
-                    <a href="{{ route('admin.projects.index') }}" class="nav-login-btn" title="Dashboard Admin" style="display: inline-flex; align-items: center; gap: 6px; color: var(--orange); font-size: 0.85rem; font-weight: 600; text-decoration: none; padding: 6px 12px; border: 1px solid var(--border-orange); border-radius: 999px;">
-                        <i class="fa-solid fa-gauge-high"></i> <span class="d-none d-sm-inline">Admin</span>
-                    </a>
-                    <form action="{{ route('logout') }}" method="POST" style="display:inline; margin: 0;">
-                        @csrf
-                        <button type="submit" title="Keluar" style="background: none; border: none; color: var(--text-body); cursor: pointer; padding: 6px 8px; font-size: 0.95rem;">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        </button>
-                    </form>
-                @else
-                    <a href="{{ route('login') }}" class="nav-login-btn" title="Login Admin" style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-white); font-size: 0.85rem; font-weight: 600; text-decoration: none; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 999px;">
-                        <i class="fa-solid fa-lock"></i> <span>Login</span>
-                    </a>
-                @endauth
                 <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle Navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>

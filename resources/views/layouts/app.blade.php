@@ -34,7 +34,6 @@
                 <li><a href="#services" class="nav-link">SERVICES</a></li>
                 <li><a href="#projects" class="nav-link">PORTFOLIO</a></li>
                 <li><a href="#review" class="nav-link">REVIEW</a></li>
-                <li><a href="#pricing" class="nav-link">PRICING</a></li>
                 <li><a href="#blog" class="nav-link">BLOG</a></li>
 
             </ul>
@@ -68,7 +67,6 @@
                     <a href="#projects" class="search-tag">Laravel</a>
                     <a href="#projects" class="search-tag">WebGIS</a>
                     <a href="#services" class="search-tag">UI/UX</a>
-                    <a href="#pricing" class="search-tag">Paket Web</a>
                 </div>
             </div>
         </div>
@@ -106,7 +104,6 @@
                         <li><a href="#services">SERVICES</a></li>
                         <li><a href="#projects">PORTFOLIO</a></li>
                         <li><a href="#review">CLIENT REVIEW</a></li>
-                        <li><a href="#pricing">PRICING</a></li>
                         <li><a href="#blog">BLOG POSTS</a></li>
                     </ul>
                 </div>

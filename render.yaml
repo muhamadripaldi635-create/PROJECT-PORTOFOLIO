@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: craftman-portfolio
+    name: mrivaldi-portfolio
     runtime: docker
     plan: free
     region: singapore

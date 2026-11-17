@@ -1,0 +1,36 @@
+name: mrivaldi-portfolio
+services:
+  - name: mrivaldi-portfolio
+    type: web
+    git:
+      repository: github.com/muhamadripaldi635-create/M-RIVALDI-PORTOFOLIO
+      branch: main
+    docker:
+      dockerfile: Dockerfile
+    instance_types:
+      - type: nano
+    ports:
+      - port: 8000
+        protocol: http
+    routes:
+      - path: /
+        port: 8000
+    env:
+      - key: APP_NAME
+        value: "M. Rivaldi Portfolio"
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        value: "base64:1A/mrJzkD9xpM3cDC64hjDdYAx2XF+qJKHQH9y+Nkhg="
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: SESSION_DRIVER
+        value: database
+      - key: CACHE_STORE
+        value: database
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: PORT
+        value: "8000"
